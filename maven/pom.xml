@@ -303,7 +303,7 @@
             <dependency>
                 <groupId>com.sun.xml.bind</groupId>
                 <artifactId>jaxb-core</artifactId>
-                <version>2.3.0.1</version>
+                <version>3.0.2</version>
             </dependency>
 
 
@@ -548,12 +548,12 @@
                                 <configuration>
                                     <target>
                                         <mkdir dir="${user.home}/.codenameone"/>
-                                        <mkdir dir="${project.build.directory}/generated-sources/project" />
-                                        <mkdir dir="${project.build.directory}/generated-sources/project/lib" />
+                                        <mkdir dir="${project.build.directory}/generated-sources/project"/>
+                                        <mkdir dir="${project.build.directory}/generated-sources/project/lib"/>
                                         <get src="https://www.codenameone.com/files/updates/UpdateCodenameOne.jar" dest="${user.home}/.codenameone/UpdateCodenameOne.jar" skipexisting="true"/>
                                         <java fork="true" jar="${user.home}/.codenameone/UpdateCodenameOne.jar">
                                             <arg value="${project.build.directory}/generated-sources/project"/>
-                                            <arg value="force" />
+                                            <arg value="force"/>
                                         </java>
                                     </target>
                                 </configuration>
