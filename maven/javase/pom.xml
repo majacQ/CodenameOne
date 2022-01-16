@@ -21,7 +21,7 @@
         <dependency>
             <groupId>org.xerial</groupId>
             <artifactId>sqlite-jdbc</artifactId>
-            <version>3.7.15-M1</version>
+            <version>3.36.0.3</version>
         </dependency>
         <dependency>
             <groupId>com.jhlabs</groupId>
@@ -84,7 +84,7 @@
                                 <mkdir dir="${project.build.directory}/skins"/>
                                 <get src="https://github.com/codenameone/codenameone-skins/archive/master.zip" dest="${project.build.directory}/skins/master.zip" skipexisting="true"/>
                                 <unzip src="${project.build.directory}/skins/master.zip" dest="${project.build.directory}/skins"/>
-                                <move file="${project.build.directory}/skins/codenameone-skins-master" tofile="${project.build.directory}/skins/codenameone-skins" />
+                                <move file="${project.build.directory}/skins/codenameone-skins-master" tofile="${project.build.directory}/skins/codenameone-skins"/>
                                 <ant dir="${project.build.directory}/skins/codenameone-skins" inheritAll="false" useNativeBasedir="true">
                                     <property name="cn1.path" location="${project.basedir}/../.."/>
                                 </ant>
