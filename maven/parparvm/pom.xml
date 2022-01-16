@@ -18,7 +18,7 @@
         <dependency>
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm</artifactId>
-            <version>5.0.3</version>
+            <version>9.2</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.ow2.asm/asm-tree -->
@@ -109,12 +109,7 @@
                         <configuration>
                             <target>
                                 <mkdir dir="${project.build.directory}/api-classes"/>
-                                <javac srcdir="${codename1.javaapi.src.dir}"
-                                       source="1.5"
-                                       target="1.5"
-                                       destdir="${project.build.directory}/api-classes"
-                                       failonerror="true"
-                                />
+                                <javac srcdir="${codename1.javaapi.src.dir}" source="1.5" target="1.5" destdir="${project.build.directory}/api-classes" failonerror="true"/>
 
                             </target>
                         </configuration>
