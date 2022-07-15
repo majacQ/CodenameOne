@@ -259,7 +259,7 @@
             <dependency>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>3.1.0</version>
             </dependency>
             <dependency>
                 <groupId>org.twdata.maven</groupId>
@@ -548,12 +548,12 @@
                                 <configuration>
                                     <target>
                                         <mkdir dir="${user.home}/.codenameone"/>
-                                        <mkdir dir="${project.build.directory}/generated-sources/project" />
-                                        <mkdir dir="${project.build.directory}/generated-sources/project/lib" />
+                                        <mkdir dir="${project.build.directory}/generated-sources/project"/>
+                                        <mkdir dir="${project.build.directory}/generated-sources/project/lib"/>
                                         <get src="https://www.codenameone.com/files/updates/UpdateCodenameOne.jar" dest="${user.home}/.codenameone/UpdateCodenameOne.jar" skipexisting="true"/>
                                         <java fork="true" jar="${user.home}/.codenameone/UpdateCodenameOne.jar">
                                             <arg value="${project.build.directory}/generated-sources/project"/>
-                                            <arg value="force" />
+                                            <arg value="force"/>
                                         </java>
                                     </target>
                                 </configuration>
