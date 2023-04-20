@@ -32,7 +32,7 @@
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-server</artifactId>
-            <version>9.4.41.v20210516</version>
+            <version>9.4.51.v20230217</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.swinglabs/swing-layout -->
         <dependency>
@@ -56,7 +56,7 @@
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-servlet</artifactId>
-            <version>8.0.4.v20111024</version>
+            <version>9.4.51.v20230217</version>
         </dependency>
         
         <!-- https://mvnrepository.com/artifact/org.jdesktop/appframework -->
@@ -178,8 +178,7 @@
                               <target>
                                   <delete dir="${project.build.directory}/${project.build.finalName}-jar-with-dependencies"/>
                                   <mkdir dir="${project.build.directory}/${project.build.finalName}-jar-with-dependencies"/>
-                                  <move file="${project.build.directory}/${project.build.finalName}-jar-with-dependencies.jar"
-                                      tofile="${project.build.directory}/${project.build.finalName}-jar-with-dependencies/designer_1.jar"/>
+                                  <move file="${project.build.directory}/${project.build.finalName}-jar-with-dependencies.jar" tofile="${project.build.directory}/${project.build.finalName}-jar-with-dependencies/designer_1.jar"/>
                                       <zip destfile="${project.build.directory}/${project.build.finalName}-jar-with-dependencies.jar" basedir="${project.build.directory}/${project.build.finalName}-jar-with-dependencies"/>
                                           
                                           
